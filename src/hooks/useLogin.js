@@ -9,7 +9,7 @@ export const  useLogin=(email,password)=>{
     const {dispatch}=useAuthContext()
     
     //make the logout function 
-    const login=async ()=>{
+    const login=async (email,password)=>{
         setError(null)
         setIsPending(true)
 
