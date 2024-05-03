@@ -29,7 +29,7 @@ export const useFirestore=(collection)=>{
     const ref=projectFirestore.collection(collection)
    
     //dispatch cancel function 
-    const dispatchIfNotCancelled=()=>{
+    const dispatchIfNotCancelled=(action)=>{
         if(!isCancelled){
             dispatch(action)
         }
