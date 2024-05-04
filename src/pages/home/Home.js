@@ -11,6 +11,7 @@ export default function Home() {
   const {user}=useAuthContext()
     const { documents, error } = useCollection(
     'Firestore', //it is name of the collection in firebase where data is stored
+    ["uid","==",user.uid] //arg to make the collectionlist distinct for each user 
     )
 
 
