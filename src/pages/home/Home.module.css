@@ -81,7 +81,7 @@
   position: absolute;
   top: 0;
   right:0;
-  background: #ddd;
+  /* background: #ddd; */
   color: #777;
   border: none;
   padding: 12px 8px;
